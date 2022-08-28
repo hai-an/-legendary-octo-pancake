@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>white-spacing空白符处理</title>
+<style type="text/css">
+    .one{white-space: normal;}
+    .two{white-space: pre;}
+    .three{white-space: nowrap;}
+</style>
+</head>
+<!--normal:常规显示.文本中的空格,空行无效,满行后自动换行,不论有多少个空格只会显示一个空白字符-->
+<!--pre:预格式化,按文档的书写格式保留空格、空行原样显示。-->
+<!--normrap：空格空行无效，强制文本不能换行，除法遇到换行标签<br />,内容超出元素的边界也不会换行,若超出浏览器界面则会自动增加滚动条.-->
+<body>
+    
+    <p class="one">这个     段落中        有很多
+    空格。此段落应用white-spacing：normal；</p>
+    <p class="two">这个     段落中        有很多
+    空格。此段落应用white-spacing：pre；</p>
+    <p class="three">此段落应用white-spacing:nowrap;这是一个较长的段落。
+        这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。
+        这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。
+        这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。
+        这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。这是一个较长的段落。
+        这是一个较长的段落。这是一个较长的段落。</p>
+</body>
+</html>

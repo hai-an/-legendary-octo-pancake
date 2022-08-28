@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>导入式css样式表</title>
+    <style type="text/css">
+/*    @import url("file:///C:/Users/Administrator/Documents/Legendary-octo-pancake-location/test03/style.css")*/
+        @import "style.css";
+    </style>
+</head>
+
+<body>
+     <h2>导入式css样式表</h2>
+    <p>导入式与外链式相同,都是将样式存放在外部样式表文件中.对HTML头部文档应用style标签,并在style标签内的开头处使用@import语句,即可导入外部样式表。</p>
+        <p>方法一: @import url("外部css地址") </p>
+        <p>方法二: @import "外部css地址" </p>
+        <p> 导入式与外链式的加载时间和顺序不同。当一个页面被加载时,link标签引用的css样式表将同时被加载,而@import引用的css样式表会等到页面全部下载完后再被加载。</p>
+</body>
+</html>
