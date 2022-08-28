@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>box-shadow属性</title>
+<style type="text/css">
+    img{
+        width: 200px;
+        padding: 20px;/*需要注意:使用 内阴影inset 必须配合内边距padding,让图片和阴影之间拉开一定距离,不然图片会将内阴影遮挡.*/
+        border: 1px solid #666;
+        border-radius: 50%;
+        box-shadow: 
+            5px 5px 10px 5px #000 inset,
+            2px 2px 20px 5px #000 inset ;
+        /*        inset 内阴影*/
+    }
+</style>
+</head>
+
+<body>
+    <img src="https://img2.baidu.com/it/u=3040272619,2108843107&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=461" alt="橙子">
+</body>
+</html>

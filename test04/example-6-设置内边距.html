@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>设置内边距</title>
+<style type="text/css">
+    .border{
+        border: 5px solid #ccc;
+    }
+    img{
+        padding: 80px;
+        padding-bottom: 0;
+/*        这两行代码相当于: padding:80px 80px 0;*/
+    }
+    p{
+        padding: 5%;/*段落内边距为父元素宽度的5%    */
+    }
+</style>
+</head>
+
+<body>
+    <img src="https://img1.baidu.com/it/u=740642687,408294282&fm=253&fmt=auto&app=138&f=JPEG?w=953&h=500" alt="内边框" class="border">
+    <p class="border">段落内边距为父元素宽度的5%.</p>
+</body>
+</html>

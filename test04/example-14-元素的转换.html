@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>元素的转换</title>
+<style type="text/css">
+    div,span{
+        width: 200px;
+        height: 50px;
+        background: #fcc;
+        margin: 10px;
+    }
+    .d_one,.d_two{display: inline;}/*将前两个div转换为行内元素*/
+    .d_three{display: none;}/*隐藏第三个div*/
+    .s_one{display: inline-block;}/*将第二个div转换为行内块元素*/
+    .s_three{display: block;}/*将第三个span转换为块元素*/
+</style>
+</head>
+
+<body>
+    <div class="d_one">第1个div中的文本</div>
+    <div class="d_two">第2个div中的文本</div>
+    <div class="d_three">第3个div中的文本</div>
+    <span class="s_one">第1个span中的文本</span>
+    <span class="s_two">第2个span中的文本</span>
+    <span class="s_three">第3个span中的文本</span>
+</body>
+</html>
