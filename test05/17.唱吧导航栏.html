@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>唱吧导航栏</title>
+    <style>
+        *{
+         padding: 0;
+        margin: 0;
+        border: 0;
+        list-style:none;
+        }
+        body{font-size: 14px;
+        font-family:"宋体" ;
+        color: #fff;}
+        .all{
+            width: 952px;
+            height: 175px;
+            margin: 50px auto;
+            padding: 0 14px;
+            background: #f6f3e9;
+            border: 1px solid #ccc;
+        }
+        .txt{
+            height: 50px;
+            line-height: 50px;
+            color: #a84848;
+        }
+        .txt h2{
+            width: 175px;
+            height: 50px;
+            padding-left: 32px;
+            font-size: 16px;
+            background: url('../img/音乐文件夹_folder-music.png') no-repeat left center/20px;
+            float: left;
+        }
+    /*开启右浮动 可设置宽高*/
+        .txt a{
+            /*display: inline-block;*//*开启浮动之后,可以设置宽高,具有行内块的特点*/
+            width: 60px;
+            height: 50px;
+            padding-left: 25px;
+            float: right;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        /*     右上角的文字 设置 默认字体颜色和点击后的字体颜色,小图标不变,   */
+        .txt a:link,
+        .txt a:visited{
+            color: #a84848;
+            text-decoration: none;
+            background: url('../img/播放_play.png') no-repeat left center;
+            background-size:20px;
+            
+          }
+/*     右上角的文字 设置 鼠标悬浮的字体颜色,改变小图标   */
+        .txt a:hover{
+            color: #000;
+            background: url('../img/播放_play (1).png') no-repeat left center/20px;
+        }
+/*        使li'水平排列,左浮动*/
+        .con li{
+            width: 148px;
+            height: 105px;
+            float: left;
+            padding: 20px 0 0 90px;
+        }
+/*        添加图标,暂时没有素材*/
+        .radio{background: #52a6b6 url('../img/radio(1).png') no-repeat 30px center/40px;}
+       
+        .song{background: #55b9b6 url('../img/音乐cd_music-cd (1).png') no-repeat 30px center/40px;}
+       
+        .album{background: #55ba7c url('../img/留声机_phonograph (1).png') no-repeat 30px center/40px;}
+       
+        .mv{background: #a16580 url('../img/电影_movie.png') no-repeat 30px center/40px;}
+        
+       /*统一给四个li'的设置鼠标经过时的背景颜色*/
+        .radio:hover{background: #313131 url('../img/收音机_broadcast-radio (1).png') no-repeat 30px center/40px;} 
+        .song:hover{background: #313131 url('../img/音乐cd_music-cd.png') no-repeat 30px center/40px;} 
+        .album:hover{background: #313131 url('../img/留声机_phonograph.png') no-repeat 30px center/40px;} 
+        .mv:hover{background: #313131 url('../img/电影_movie (1).png') no-repeat 30px center/40px;} 
+        
+        /*li里面的h2标签的字体大小统一设置*/
+        .radio h2,.song h2,.album h2,.mv h2{
+            font-size: 44px;
+        }
+        /*li里面的p标签的行高统一设置*/
+        .radio p,
+        .song p,
+        .album p,
+        .mv p{
+            line-height: 20px;
+        }
+        /*四个li统一 设置默认 和点击后的 文字颜色,并取消下划线*/
+        .radio a:link,.radio a:visited,
+        .song a:link,.song a:visited,
+        .album a:link,.album a:visited,
+        .mv a:link,.mv a:visited{
+            color: #fff;
+            text-decoration: none;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="txt">
+            <h2>MUSIC-精选歌单</h2>
+            <a href="#">连播本页</a>
+        </div>
+        <ul class="con">
+            <li class="radio">
+                <h2>Radio</h2>
+                <p>音乐达人</p>
+                <p><a href="#">随便听听</a></p>
+            </li>
+            <li class="song">
+                <h2>Song</h2>
+                <p>音乐达人</p>
+                <p><a href="#">最新单曲</a></p>
+            </li>
+            <li class="album">
+                <h2>Album</h2>
+                <p>音乐达人</p>
+                <p><a href="#">音乐专辑</a></p>
+            </li>
+            <li class="mv">
+                <h2>Mv</h2>
+                <p>音乐达人</p>
+                <p><a href="#">劲爆</a></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

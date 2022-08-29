@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>拼图效果</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            overflow: hidden;
+            width: 604px;
+            height: 454px;
+            margin: 0 auto;
+            border: 5px solid #aaa;
+            border-radius: 30px;
+/*            没素材只能找一张图随便应付一下*/
+            background: url('https://img0.baidu.com/it/u=2587958213,1285343653&fm=253&fmt=auto&app=138&f=JPEG?w=491&h=330')
+                no-repeat center/cover;
+        ;}
+        .one{
+            width: 604px;
+            height: 227px;
+            background-image:url(),url(),url();
+            background-repeat: no-repeat;
+            background-position: left,center,right;
+            border-radius: 30px 30px 0 0;
+        }
+        .two{
+            width: 604px;
+            height: 227px;
+          background-image: url(),url(),url();
+            background-repeat: no-repeat;
+            background-position: left,center,right;
+            border-radius: 0 0 30px 30px;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="box">
+     <div class="one"></div>
+    <div class="two"></div>
+    </div>
+</body>
+</html>

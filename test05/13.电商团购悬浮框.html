@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电商团购悬浮框</title>
+    <style>
+/*      1.  重置浏览器默认样式*/
+        body,ul,li{padding: 0;
+        margin: 0;
+        list-style: none;}
+/*        2.全局控制*/
+        body{font-size: 18px;font-family: '微软雅黑';}
+/*        3.为ul设置宽度高度和边框样式*/
+        ul{
+            width: 200px;
+            height: 270px;
+            margin: 20px;
+            border: 3px solid #613e72;
+            padding: 10px;
+        }
+/*        4.为li设置文本样式*/
+        li{
+            width: 142px;
+            height: 40px;
+            line-height: 40px;
+            background: url('../img/闹钟_alarm-clock.png') no-repeat left center/contain;
+            padding-left: 40px;
+            margin: 0 auto 5px;
+            color: #613e72;
+        }
+        .item{
+            background: #613e72 url('https://img2.baidu.com/it/u=846197133,541045164&fm=253&fmt=auto&app=138&f=PNG?w=64&h=64') no-repeat 5px center;
+            color: #FFFFFF;
+             background-position:left center ;
+            background-size: contain;
+        }
+        .back{
+            background: url("../img/上-圆_up-c.png") no-repeat left center;
+                background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>7月30日0:00开团</li>
+        <li class="item">新品团</li>
+        <li class="item">尝鲜团</li>
+        <li class="item">秒杀团</li>
+        <li class="item">清仓团</li>
+        <li class="back">返回顶部</li>
+    </ul>
+</body>
+</html>
