@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>员工档案</title>
+    <style>
+        body{
+            font-size: 12px;
+            font-family: "微软雅黑";
+        }
+        body,h2,form,img,input,select,textarea{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: none;
+        }
+/*        整体控制页面*/
+        .all{
+            width: 1024px;
+        height: 863px;
+        margin: 0 auto;
+        background: url('https://img2.baidu.com/it/u=2173145744,1191836709&fm=253&fmt=auto&app=138&f=JPEG?w=374&h=500') no-repeat center;
+            background-size: contain;
+        }
+/*        整体控制表单*/
+        .list{
+            width: 685px;
+            padding: 180px 0 0 340px;
+        }
+/*         控制表单标题   */
+        h2{
+            font-size: 38px;
+            color: #f5f5f5;
+            margin-bottom: 60px;
+            padding-left: 120px;
+        }
+/*        控制姓名,年龄文本框*/
+        .txt,.age{
+            width: 360px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 40px;
+            color: #ccc;
+        }
+/*        控制单选按键和复选框*/\
+        .choose{
+            width: 390px;
+            height: 25px;
+            line-height: 25px;
+            background-color: #fff;
+            padding: 5px 0 0 10px;
+        }
+/*        控制薪资和多行文本*/
+        .course,.money{
+            width: 190px;
+            height: 25px;
+            padding-left: 10px;
+        }
+        .money{
+            color: #ddd;
+        }
+        .money_box span{
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .message{
+            width: 390px;
+            height: 80px;
+            padding: 5px 0 0 10px;
+            font-size: 12px;
+            color: #CCC;
+        }
+/*        控制提交按钮*/
+        .btn{
+            width: 390px;
+            height: 30px;
+            background-color: #eb6854;
+            color: #FFF;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <form action="#" method="post" class="list">
+            <h2>员工档案</h2>
+            <p><input type="text" placeholder="本人真实姓名" class="txt"></p>
+            <p><input type="text" placeholder="请填写实际年龄" class="age"></p>
+           <p class="choose">
+               <label><input type="radio" name="sex" checked>男</label>
+               <label><input type="radio" name="sex">女</label>
+            </p>
+             <p class="choose">
+                  <label><input type="checkbox">技术部</label>
+                  <label><input type="checkbox">行政部</label>
+                  <label><input type="checkbox">财务部</label>
+                  <label><input type="checkbox">人力资源部</label>
+            </p>         
+            <p>
+                <select class="course">
+                    <option value="">北京分公司</option>
+                    <option value="">上海分公司</option>
+                    <option value="">广州分公司</option>
+                </select>
+            </p>
+            <p class="money_box">
+                <input type="text" class="money"><span>元/月 (收入)</span>
+            </p>
+            <p><textarea cols="50" rows="5" class="message" placeholder="请简要描述自己的工作职责"></textarea>
+            </p>
+            <p><input type="submit" value="提交" class="btn"></p>
+        </form>
+    </div>
+</body>
+</html>

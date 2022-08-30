@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css控制表单样式</title>
+    <style>
+        body{
+            font-size: 12px;
+            font-family: "宋体";
+        }
+        body,form,input{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        form{
+            width: 300px;
+            height: 135px;
+            padding-top: 15px;
+            margin: 50px auto;/*表单居中*/
+            background: #dcf5fa;/*表单背景色--小蓝色*/
+        }
+        p{
+            width: 273px;
+            height: 24px;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        span{
+            display: inline-block;
+            width: 70px;
+            height: 24px;
+            line-height: 24px;
+           text-align: right;
+        }
+        .num,.pass{
+            width: 152px;
+            height: 18px;
+            border: 1px solid #38a1bf;
+            padding: 2px 2px 2px 22px;
+        }
+        .num{/*定义第一个input控件的背景,文本颜色*/
+            background: url() no-repeat;
+            color: #999;
+        }
+        .pass{ /*定义第二个input控件的背景*/
+            background: url() no-repeat;
+        }
+        .btn{/*是按钮和上面的内容拉开距离*/
+            display: inline-block;
+            width: 87px;
+            height: 24px;
+            margin: 10px 0 10px 101px;
+            background:skyblue ;/*定义按钮背景*/
+        }
+    </style>
+</head>
+
+<body>
+      <form action="#" method="post">
+        <p><span>账号/号码:</span><input type="text" class="num" placeholder="itcast"></p>
+        <p><span>密码:</span><input type="password" class="pass"></p>
+       <input type="submit" class="btn" />
+    </form>
+</body>
+</html>
